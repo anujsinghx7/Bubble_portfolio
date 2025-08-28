@@ -740,7 +740,7 @@
       }
       .nav-toggle {
         font-size: 1.6em;
-        right: 8px;
+        right: 28px;
         top: 50%;
         transform: translateY(-50%);
       }
@@ -1185,5 +1185,6 @@
   border-radius: 50%;
   display: block;
 }
+
 
 
