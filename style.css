@@ -369,7 +369,7 @@
       .nav-toggle {
         display: block;
         font-size: 2em;
-        right: 18px; 
+        right: 38px; 
         top: 50%;
         transform: translateY(-50%);
         margin: 0;
@@ -431,7 +431,7 @@
       }
       .nav-toggle {
         font-size: 1.6em;
-        right: 8px;
+        right: 28px;
         top: 50%;
         transform: translateY(-50%);
       }
@@ -678,7 +678,7 @@
       .nav-toggle {
         display: block;
         font-size: 2em;
-        right: 18px;
+        right: 38px;
         top: 50%;
         transform: translateY(-50%);
         margin: 0;
@@ -988,7 +988,7 @@
       .nav-toggle {
         display: block;
         font-size: 2em;
-        right: 18px; 
+        right: 38px; 
         top: 50%;
         transform: translateY(-50%);
         margin: 0;
@@ -1050,7 +1050,7 @@
       }
       .nav-toggle {
         font-size: 1.6em;
-        right: 8px;
+        right: 28px;
         top: 50%;
         transform: translateY(-50%);
       }
@@ -1185,6 +1185,7 @@
   border-radius: 50%;
   display: block;
 }
+
 
 
 
