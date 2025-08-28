@@ -1,5 +1,4 @@
-  
-    // Animate skill bars
+
     window.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.progress-bar').forEach(bar => {
         const progress = bar.getAttribute('data-progress');
@@ -8,8 +7,6 @@
         }, 500);
       });
     });
-
-    // Add after skill bars animation
     document.querySelectorAll('.progress-bar').forEach(bar => {
       const percent = bar.getAttribute('data-progress');
       const tooltip = document.createElement('span');
@@ -17,8 +14,6 @@
       tooltip.textContent = percent + '%';
       bar.parentElement.appendChild(tooltip);
     });
-
-    // Theme toggle
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
     let dark = true;
@@ -29,7 +24,7 @@
         document.body.style.color = '#fff';
         themeIcon.textContent = '🌙';
         themeToggle.classList.remove('light');
-        // Reset container and card backgrounds for dark mode
+
         document.querySelector('.container').style.background = 'rgba(40, 40, 80, 0.55)';
         document.querySelectorAll('.card').forEach(card => {
           card.style.background = 'rgba(30, 32, 60, 0.95)';
@@ -49,7 +44,6 @@
         document.body.style.color = '#232526';
         themeIcon.textContent = '☀️';
         themeToggle.classList.add('light');
-        // Light mode container and card backgrounds
         document.querySelector('.container').style.background = 'rgba(255,255,255,0.85)';
         document.querySelectorAll('.card').forEach(card => {
           card.style.background = 'rgba(255,255,255,0.98)';
@@ -67,24 +61,20 @@
           el.style.color = '#232526';
           el.style.borderColor = '#c3bfff';
         });
-        // Progress bars
         document.querySelectorAll('.progress-bar').forEach(bar => {
           bar.style.background = 'linear-gradient(90deg, #6c3cff 0%, #3a3dff 100%)';
           bar.style.boxShadow = '0 0 8px #bdb7ff88';
         });
-        // Section headings
         document.querySelectorAll('section h2').forEach(h2 => {
           h2.style.color = '#6c3cff';
           h2.style.borderBottom = '1.5px solid #6c3cff';
         });
-        // Links in social
         document.querySelectorAll('.social a').forEach(a => {
           a.style.color = '#6c3cff';
         });
       }
     });
 
-    // Contact form (Formspree integration)
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
       const form = this;
@@ -106,7 +96,6 @@
       });
     });
 
-    // Scrollspy: highlight nav link for current section
     const navLinks = document.querySelectorAll('nav ul li a');
     const sections = Array.from(document.querySelectorAll('section'));
     window.addEventListener('scroll', () => {
@@ -124,7 +113,6 @@
         }
       });
 
-      // Show/hide back to top button
       const backToTop = document.getElementById('backToTop');
       if (window.scrollY > 300) {
         backToTop.style.display = 'flex';
@@ -133,14 +121,12 @@
       }
     });
 
-    // Responsive Navbar Toggle
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
     navToggle.addEventListener('click', () => {
       navMenu.classList.toggle('open');
       navToggle.classList.toggle('open');
     });
-    // Close nav on link click (mobile)
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         if (window.innerWidth < 901) {
@@ -150,7 +136,6 @@
       });
     });
 
-    // 3D tilt effect for cards
     document.querySelectorAll('.card').forEach(card => {
   card.style.transition = 'transform 0.15s cubic-bezier(.4,0,.2,1), box-shadow 0.15s cubic-bezier(.4,0,.2,1)';
   card.addEventListener('mousemove', (e) => {
@@ -159,7 +144,6 @@
     const y = e.clientY - rect.top;
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    // Increase the multiplier for a stronger tilt
     const rotateX = ((y - centerY) / centerY) * 18;
     const rotateY = ((x - centerX) / centerX) * 18;
     card.style.transform = `perspective(700px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.07)`;
@@ -171,19 +155,16 @@
   });
 });
 
-    // Cursor-following neon light
     const cursorLight = document.getElementById('cursorLight');
     document.addEventListener('mousemove', (e) => {
-      cursorLight.style.left = (e.clientX) + 'px'; // center of circle at cursor X
-      cursorLight.style.top = (e.clientY) + 'px';  // center of circle at cursor Y
+      cursorLight.style.left = (e.clientX) + 'px'; 
+      cursorLight.style.top = (e.clientY) + 'px';  
     });
 
-    // Back to top button
     document.getElementById('backToTop').addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Section fade-in on scroll
     const allSections = document.querySelectorAll('section');
     function revealSections() {
       allSections.forEach(sec => {
@@ -196,7 +177,6 @@
     window.addEventListener('scroll', revealSections);
     window.addEventListener('DOMContentLoaded', revealSections);
 
-    // Typewriter effect for header
     const typewriterTexts = [
       "Passionate about technology, AI, and web development.",
       "I love building things with code.",
@@ -227,7 +207,6 @@
     }
     window.addEventListener('DOMContentLoaded', type);
 
-    // Replace your createFloatingShapes function with this version for continuous bubbles:
 function createFloatingShapes() {
   const shapes = document.querySelector('.floating-shapes');
   if (!shapes) return;
@@ -249,24 +228,21 @@ function createFloatingShapes() {
     // Assign a random zigzag animation
     const zigzag = Math.random() > 0.5;
     s.style.animationName = zigzag ? 'floatShapeZigZag' : 'floatShape';
-    // Randomize zigzag direction
     if (zigzag) {
       s.style.setProperty('--zigzag', Math.random() > 0.5 ? 1 : -1);
     }
     shapes.appendChild(s);
 
-    // Remove bubble after animation ends
     setTimeout(() => {
       s.remove();
     }, duration * 1000);
   }
 
-  // Spawn initial bubbles
+  
   for (let i = 0; i < 18; i++) {
     spawnBubble();
   }
 
-  // Continuously spawn bubbles
   setInterval(() => {
     spawnBubble();
   }, 900);
@@ -293,7 +269,6 @@ window.addEventListener('DOMContentLoaded', createFloatingShapes);
     bubble.style.opacity = 0.2;
   }, 20);
 
-  // "Burst" effect: create small fading circles
   setTimeout(() => {
     for (let i = 0; i < 8; i++) {
       const burst = document.createElement('div');
@@ -319,7 +294,6 @@ window.addEventListener('DOMContentLoaded', createFloatingShapes);
   }, 500);
 }
 
-    // Remove the emojiConfetti event listener and add this:
     document.addEventListener('click', e => {
       if (!e.target.closest('button,input,textarea,a')) {
         bubbleBurst(e.clientX, e.clientY);
@@ -350,7 +324,6 @@ document.addEventListener('mousemove', e => {
   spawnParticle(e.clientX, e.clientY);
 });
 
-// Example: Replace 'anujsinghx7' with your LeetCode username
 fetch('https://leetcode-stats-api.herokuapp.com/anujsinghx7')
   .then(res => res.json())
   .then(data => {
@@ -361,4 +334,5 @@ fetch('https://leetcode-stats-api.herokuapp.com/anujsinghx7')
       Ranking: ${data.ranking}
     `;
   });
+
   
