@@ -28,7 +28,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1em 2.5em 1em 0em; /* Increase right padding for space */
+      padding: 1em 2.5em 1em 0em; 
       box-shadow: 0 2px 16px #a259ff55;
       border-bottom: 1px solid #a259ff33;
       position: fixed;
@@ -310,7 +310,7 @@
       border: 2px solid #a259ff;
       color: #a259ff;
       border-radius: 8px;
-      padding: 0.4em 0.7em; /* reduce right padding */
+      padding: 0.4em 0.7em; 
       cursor: pointer;
       font-weight: bold;
       margin-left: 1em;
@@ -319,18 +319,16 @@
       min-width: 48px;
       width: auto;
     }
-    /* Hide Day/Night text on laptop/desktop view */
     @media (min-width: 701px) {
       .theme-toggle span + span {
         display: none !important;
       }
     }
-    /* Responsive Navbar */
     .nav-toggle {
       display: none;
       background: none;
       border: none;
-      font-size: 1.7em; /* smaller icon */
+      font-size: 1.7em; 
       color: #a259ff;
       cursor: pointer;
       margin-left: 1em;
@@ -364,14 +362,14 @@
     @media (max-width: 700px) {
       nav {
         flex-direction: row;
-        padding: 0.5em 1em; /* Increase right padding for mobile */
+        padding: 0.5em 1em; 
         min-height: 48px;
         height: 48px;
       }
       .nav-toggle {
         display: block;
         font-size: 2em;
-        right: 18px; /* was 12px, move a bit left */
+        right: 18px; 
         top: 50%;
         transform: translateY(-50%);
         margin: 0;
@@ -427,7 +425,7 @@
     }
     @media (max-width: 500px) {
       nav {
-        padding: 0.2em 0.7em; /* Increase right padding for smallest screens */
+        padding: 0.2em 0.7em; 
         min-height: 38px;
         height: 38px;
       }
@@ -448,7 +446,6 @@
         margin-right: auto;
       }
     }
-    /* Prevent elements from overflowing their containers */
     .card,
     .container,
     #leetcode-tracker-container {
@@ -620,27 +617,27 @@
       border: 2px solid #a259ff;
       color: #a259ff;
       border-radius: 8px;
-      padding: 0.4em 0.7em; /* reduce right padding */
+      padding: 0.4em 0.7em; 
       cursor: pointer;
       font-weight: bold;
       margin-left: 1em;
-      margin-right: 1em; /* Reduce from 2.5em to 1em */
+      margin-right: 1em;
       transition: background 0.2s, color 0.2s, border 0.2s;
       min-width: 48px;
       width: auto;
     }
-    /* Hide Day/Night text on laptop/desktop view */
+   
     @media (min-width: 701px) {
       .theme-toggle span + span {
         display: none !important;
       }
     }
-    /* Responsive Navbar */
+   
     .nav-toggle {
       display: none;
       background: none;
       border: none;
-      font-size: 1.7em; /* smaller icon */
+      font-size: 1.7em; 
       color: #a259ff;
       cursor: pointer;
       margin-left: 1em;
@@ -674,14 +671,14 @@
     @media (max-width: 700px) {
       nav {
         flex-direction: row;
-        padding: 0.5em 1em; /* Increase right padding for mobile */
+        padding: 0.5em 1em; 
         min-height: 48px;
         height: 48px;
       }
       .nav-toggle {
         display: block;
         font-size: 2em;
-        right: 18px; /* was 12px, move a bit left */
+        right: 18px;
         top: 50%;
         transform: translateY(-50%);
         margin: 0;
@@ -737,7 +734,7 @@
     }
     @media (max-width: 500px) {
       nav {
-        padding: 0.2em 0.7em; /* Increase right padding for smallest screens */
+        padding: 0.2em 0.7em; 
         min-height: 38px;
         height: 38px;
       }
@@ -758,7 +755,7 @@
         margin-right: auto;
       }
     }
-    /* Prevent elements from overflowing their containers */
+    
     .card,
     .container,
     #leetcode-tracker-container {
@@ -930,7 +927,7 @@
       border: 2px solid #a259ff;
       color: #a259ff;
       border-radius: 8px;
-      padding: 0.4em 0.7em; /* reduce right padding */
+      padding: 0.4em 0.7em; 
       cursor: pointer;
       font-weight: bold;
       margin-left: 1em;
@@ -939,18 +936,18 @@
       min-width: 48px;
       width: auto;
     }
-    /* Hide Day/Night text on laptop/desktop view */
+   
     @media (min-width: 701px) {
       .theme-toggle span + span {
         display: none !important;
       }
     }
-    /* Responsive Navbar */
+   
     .nav-toggle {
       display: none;
       background: none;
       border: none;
-      font-size: 1.7em; /* smaller icon */
+      font-size: 1.7em; 
       color: #a259ff;
       cursor: pointer;
       margin-left: 1em;
@@ -984,14 +981,14 @@
     @media (max-width: 700px) {
       nav {
         flex-direction: row;
-        padding: 0.5em 1em; /* Increase right padding for mobile */
+        padding: 0.5em 1em; 
         min-height: 48px;
         height: 48px;
       }
       .nav-toggle {
         display: block;
         font-size: 2em;
-        right: 18px; /* was 12px, move a bit left */
+        right: 18px; 
         top: 50%;
         transform: translateY(-50%);
         margin: 0;
@@ -1047,7 +1044,7 @@
     }
     @media (max-width: 500px) {
       nav {
-        padding: 0.2em 0.7em; /* Increase right padding for smallest screens */
+        padding: 0.2em 0.7em; 
         min-height: 38px;
         height: 38px;
       }
@@ -1068,7 +1065,6 @@
         margin-right: auto;
       }
     }
-    /* Back to top button */
     #backToTop {
       position: fixed;
       bottom: 32px;
@@ -1189,4 +1185,5 @@
   border-radius: 50%;
   display: block;
 }
+
 
