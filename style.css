@@ -116,7 +116,7 @@
       100% { background-position: 100% 50%; }
     }
     header p {
-      color: #e0e0ff;
+      color:inherit;
       font-size: 1.2rem;
       margin-bottom: 2em;
     }
@@ -142,7 +142,7 @@
       margin-left: 0;
       padding-left: 1.2em;
       font-size: 1.1em;
-      color: #e0e0ff;
+      color: inherit;
       text-align: left;
       display: block;
     }
@@ -1185,6 +1185,7 @@
   border-radius: 50%;
   display: block;
 }
+
 
 
 
