@@ -324,7 +324,7 @@ document.addEventListener('mousemove', e => {
   spawnParticle(e.clientX, e.clientY);
 });
 
-fetch('https://leetcode-stats-api.herokuapp.com/anujsinghx7')
+fetch('https://leetcode-stats-api.herokuapp.com/anujsingh')
   .then(res => res.json())
   .then(data => {
     document.getElementById('leetcode-tracker').innerHTML = `
@@ -353,4 +353,5 @@ fetch('https://leetcode-stats-api.herokuapp.com/anujsinghx7')
   });
 
   
+
 
